@@ -22,7 +22,8 @@ I
 	stage('Run Spark Job') {
 		steps {
 			script {
-			// Tail the logs of the Spark job to ensure it's running sh 'docker-compose logs -f'
+			// Tail the logs of the Spark job to ensure it's running 
+			sh 'docker-compose logs -f'
 			}
 		}
 	}
